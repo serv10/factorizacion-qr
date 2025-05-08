@@ -1,0 +1,63 @@
+# Dependencias de Node
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Archivos de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos de compilación y temporales
+dist/
+build/
+tmp/
+temp/
+
+# Carpetas de salida de pruebas
+coverage/
+.nyc_output/
+test-results/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Configuraciones del editor
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Paquetes y archivos de bloqueo
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Archivos de configuración personalizados
+*.local
+
+# Archivos de configuración de servicios
+*.pid
+*.seed
+*.tgz
+
+# Archivos generados por herramientas de versiones anteriores
+.cache/
+.next/
+out/
+.sass-cache/
+.eslintcache
+
+# Archivo de sesión de REPL
+repl.history
