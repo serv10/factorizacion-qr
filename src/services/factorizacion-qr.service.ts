@@ -4,7 +4,7 @@ import {
   multiplicarEscalar,
   productoPunto,
   restarVectores,
-} from "../utils/matriz.util.ts";
+} from "../utils/matriz.util";
 
 export function calcularFactorizacionQR(
   matriz: number[][],
@@ -103,5 +103,5 @@ export function calcularFactorizacionQR(
   }
 
   // Devolvemos las matrices resultantes
-  return [null, { matrizQ: Q, matrizR: R }];
+  return [undefined, { matrizQ: Q, matrizR: R }];
 }

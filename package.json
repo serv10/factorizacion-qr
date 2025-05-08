@@ -2,10 +2,10 @@
   "name": "refactorizacion-qr",
   "version": "1.0.0",
   "main": "src/index.ts",
-  "type": "module",
   "scripts": {
-    "start": "node --env-file=.env --experimental-transform-types --no-warnings .",
-    "watch": "node --watch --env-file=.env --experimental-transform-types --no-warnings ."
+    "start": "node --env-file=.env --experimental-transform-types --no-warnings ./dist/index.js",
+    "watch": "node --watch --env-file=.env --experimental-transform-types --no-warnings ./dist/index.js",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",

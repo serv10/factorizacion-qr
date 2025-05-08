@@ -1,10 +1,10 @@
-import { Router } from "express";
+import { Router, type Application } from "express";
 
-import factorizacionRouter from "./factorizacion-qr.route.ts";
-import authJWT from "../middlewares/auth-jwt.middleware.ts";
+import factorizacionRouter from "./factorizacion-qr.route";
+import authJWT from "../middlewares/auth-jwt.middleware";
 
 const router = Router();
 
-router.use("/factorizacion", authJWT, factorizacionRouter);
+router.use("/factorizacion",authJWT as Application, factorizacionRouter);
 
 export default router;

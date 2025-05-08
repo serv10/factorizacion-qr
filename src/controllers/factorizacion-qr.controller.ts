@@ -1,9 +1,10 @@
-import { calcularFactorizacionQR } from "../services/factorizacion-qr.service.ts";
-import { redondear } from "../utils/matematica.util.ts";
-import { esMatrizValida } from "../utils/matriz.util.ts";
-import { responderError } from "../utils/respuesta-error.util.ts";
+import { Request, Response } from "express";
+import { calcularFactorizacionQR } from "../services/factorizacion-qr.service";
+import { redondear } from "../utils/matematica.util";
+import { esMatrizValida } from "../utils/matriz.util";
+import { responderError } from "../utils/respuesta-error.util";
 
-export const factorizacionQR = async (req, res) => {
+export const factorizacionQR = async (req:Request, res:Response) => {
   // Obtenemos la matriz del cuerpo de la solicitud
   const { matriz } = req.body;
 
@@ -38,7 +39,7 @@ export const factorizacionQR = async (req, res) => {
   }
 
   // Obtenemos la matriz Q y R de la respuesta
-  const { matrizQ, matrizR } = response;
+  const { matrizQ, matrizR } = response!;
 
   // Devolvemos la respuesta con las matrices Q y R redondeadas a 10 decimales
   return res.json({
